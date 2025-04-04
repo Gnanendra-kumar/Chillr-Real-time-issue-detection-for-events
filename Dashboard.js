@@ -5,7 +5,7 @@ const Dashboard = () => {
     const [feedback, setFeedback] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/feedback')
+        axios.get('http://localhost:5050/feedback')
             .then(response => setFeedback(response.data))
             .catch(error => console.error(error));
     }, []);
